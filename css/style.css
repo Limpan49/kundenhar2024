@@ -1,0 +1,162 @@
+#wrapper1 {
+    display:grid; 
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 10vh 10vh 20vh 30vh 40vh;
+    grid-template-areas: 
+    'hd1 hd1 hd1'
+    'nav1 nav1 nav1'
+    'div1 div2 div3'
+    'sc1 sc2 sc3'
+    'sc4 sc5 sc6'
+    ;
+    gap: 15px;
+    background-color:  #3498db;
+}
+
+header {
+    grid-area: hd1;
+    text-align: center;
+    color: green;
+
+}
+
+nav {
+    display: flex;
+    grid-area: nav1;
+    text-align: center;
+    color: green;
+    justify-content: space-evenly;
+    padding: 18px 0px;
+}
+
+div {
+    grid-area: div1;
+    text-align: center;
+    color: green;
+
+}
+
+#section1 {
+    grid-area: sc1;
+    display: grid;
+    background-image: url(/img/Flygplansomlyfter.jpg);
+    background-size: cover;
+}
+#section2 {
+    grid-area: sc2;
+}
+#section3 {
+    grid-area: sc3;
+}
+#section4 {
+    grid-area: sc4;
+}
+#section5 {
+    grid-area: sc5;
+}
+#section6 {
+    grid-area: sc6;
+}
+
+#flygplan-bild {
+    width: 300px;
+    height: 175.5px;
+}
+
+#wrapper2 {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 10vh 10vh 15vh 50vh 25vh;
+    grid-template-areas: 
+    'hd1 hd1 hd1'
+    'nav1 nav1 nav1'
+    'div1 div1 div1'
+    'sc1 sc2 sc3'
+    'ft1 ft2 ft3';
+
+}
+
+#header2 {
+
+}
+
+
+
+
+
+
+
+#wrapper3 {
+    display: grid;
+    grid-template-columns: 33% 16,75% 16,75% 33%;
+    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 15vh 30vh;
+    grid-template-areas:
+    'hd1 hd1 hd1 hd1'
+    'nav1 nav1 nav1 nav1'
+    'div1 div1 div1 div1'
+    'sc1 sc1 sc2 sc3'
+    'sc1 sc1 sc4 sc5'
+    'sc1 sc1 sc6 sc7'
+    'sc1 sc1 sc8 sc9'
+    'div5 div6 div7 div8';
+
+}
+
+#header3 {
+    grid-area: hd1;
+    text-align: center;
+    color: green;
+
+}
+
+#nav1 {
+    display: flex;
+    grid-area: nav 1;
+    text-align: center;
+    color: green;
+    justify-content: space-evenly;
+    padding: 18px 0px;
+}
+
+#section1 {
+    display: flex;
+    grid-area: sc1;
+
+}
+
+.map-section1 {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-section1 iframe {
+    width: 100%; /* Responsiv bredd */
+    max-width: 800px; /* Begränsar bredden */
+    height: 450px;
+    border: none; /* Tar bort ramlinjer */
+}
+
+.map-section1 h2 {
+    font-size: 1.8rem;
+    color: #3498db; /* Matchar huvudfärgen för ExploreEarth */
+    margin-bottom: 0.5rem;
+}
+
+.map-section1 p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .map-section iframe {
+        height: 300px; /* Justerar höjd för mindre skärmar */
+    }
+}
+
+
