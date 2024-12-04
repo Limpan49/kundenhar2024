@@ -1,6 +1,6 @@
 #wrapper1 {
     display:grid; 
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 33% 33% 1fr;
     grid-template-rows: 10vh 10vh 20vh 30vh 40vh;
     grid-template-areas: 
     'hd1 hd1 hd1'
@@ -10,21 +10,26 @@
     'sc4 sc5 sc6'
     ;
     gap: 15px;
-    background-color:  #3498db;
+    /*background-image: url(/img/strand.jpg); */
 }
 
 header {
     grid-area: hd1;
     text-align: center;
-    color: green;
+    color: black;
 
 }
+
+header h1 {
+    margin:0px;
+}
+
 
 nav {
     display: flex;
     grid-area: nav1;
     text-align: center;
-    color: green;
+    color: black;
     justify-content: space-evenly;
     padding: 18px 0px;
 }
@@ -41,21 +46,33 @@ div {
     display: grid;
     background-image: url(/img/Flygplansomlyfter.jpg);
     background-size: cover;
+    border-radius: 15px;
 }
 #section2 {
     grid-area: sc2;
+    display: grid;
+    background-image: url(/img/hotellrum.webp);
+    background-size: cover; 
+    border-radius: 15px;
 }
 #section3 {
     grid-area: sc3;
+    display: grid;
+    background-image: url(/img/hyrbil.jpg);
+    background-size: cover;
+    border-radius: 15px;
 }
 #section4 {
     grid-area: sc4;
+    color: black;
 }
 #section5 {
     grid-area: sc5;
+    color: black;
 }
 #section6 {
     grid-area: sc6;
+    color: black;
 }
 
 #flygplan-bild {
@@ -63,9 +80,10 @@ div {
     height: 175.5px;
 }
 
+
 #wrapper2 {
     display: grid;
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 33% 33% 1fr;
     grid-template-rows: 10vh 10vh 15vh 50vh 25vh;
     grid-template-areas: 
     'hd1 hd1 hd1'
@@ -88,8 +106,8 @@ div {
 
 #wrapper3 {
     display: grid;
-    grid-template-columns: 33% 16,75% 16,75% 33%;
-    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 15vh 30vh;
+    grid-template-columns: 33% 16.5% 16.5% 1fr;
+    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 15vh 15vh 30vh;
     grid-template-areas:
     'hd1 hd1 hd1 hd1'
     'nav1 nav1 nav1 nav1'
@@ -99,64 +117,100 @@ div {
     'sc1 sc1 sc6 sc7'
     'sc1 sc1 sc8 sc9'
     'div5 div6 div7 div8';
+    gap: 5px;
 
 }
 
-#header3 {
+#header {
     grid-area: hd1;
     text-align: center;
-    color: green;
-
+    color: black;
 }
 
-#nav1 {
+#nav {
     display: flex;
-    grid-area: nav 1;
+    grid-area: nav1;
     text-align: center;
     color: green;
     justify-content: space-evenly;
     padding: 18px 0px;
 }
 
-#section1 {
-    display: flex;
-    grid-area: sc1;
-
-}
 
 .map-section1 {
     text-align: center;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 27.5rem;
+    width: 30rem;
+    transform: translateX(5rem);
 }
 
 .map-section1 iframe {
-    width: 100%; /* Responsiv bredd */
-    max-width: 800px; /* Begränsar bredden */
+    width: 100%;
+    max-width: 800px;
     height: 450px;
-    border: none; /* Tar bort ramlinjer */
+    border: 15px;
 }
 
 .map-section1 h2 {
     font-size: 1.8rem;
-    color: #3498db; /* Matchar huvudfärgen för ExploreEarth */
+    color: black;
     margin-bottom: 0.5rem;
 }
 
 .map-section1 p {
     font-size: 1rem;
-    color: #555;
+    color: black;
     margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-    .map-section iframe {
-        height: 300px; /* Justerar höjd för mindre skärmar */
-    }
+#section32 {
+    grid-area: sc2;
+    background-image: url(/img/koravrev.jpg);
+    background-size: cover;
+    border-radius: 15px;
 }
 
+#section33 {
+    grid-area: sc3;
+    color: black;
+}
 
+#section34 {
+    grid-area: sc4;
+    background-image: url(/img/Island.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#section35 {
+    grid-area: sc5;
+    color: black;
+}
+
+#section36 {
+    grid-area: sc6;
+    background-image: url(/img/Greklandbild.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#section37 {
+    grid-area: sc7;
+    color: black;
+}
+
+#section38 {
+    grid-area: sc8;
+    background-image: url(/img/Grancanrai.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#section39 {
+    grid-area: sc9;
+    color: black;
+}
