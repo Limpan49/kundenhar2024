@@ -25,6 +25,7 @@ header h1 {
 }
 
 
+
 nav {
     display: flex;
     grid-area: nav1;
@@ -32,9 +33,30 @@ nav {
     color: black;
     justify-content: space-evenly;
     padding: 18px 0px;
+    margin: 0px;
+   
 }
 
-div {
+#navtest{
+   
+    margin-top: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+   
+   
+   
+}
+
+#navtest3{
+    margin-top: 15px;
+    justify-content: space-evenly;
+    text-align: center;
+   
+}
+
+
+
+#div {
     grid-area: div1;
     text-align: center;
     color: green;
@@ -84,21 +106,15 @@ div {
 #wrapper2 {
     display: grid;
     grid-template-columns: 33% 33% 1fr;
-    grid-template-rows: 10vh 10vh 15vh 50vh 25vh;
+    grid-template-rows: 10vh 20vh 15vh 50vh 25vh;
     grid-template-areas: 
     'hd1 hd1 hd1'
     'nav1 nav1 nav1'
     'div1 div1 div1'
     'sc1 sc2 sc3'
     'ft1 ft2 ft3';
-
+   
 }
-
-#header2 {
-
-}
-
-
 
 
 
@@ -107,7 +123,7 @@ div {
 #wrapper3 {
     display: grid;
     grid-template-columns: 33% 16.5% 16.5% 1fr;
-    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 15vh 15vh 30vh;
+    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 15vh 15vh 90vh;
     grid-template-areas:
     'hd1 hd1 hd1 hd1'
     'nav1 nav1 nav1 nav1'
@@ -116,11 +132,12 @@ div {
     'sc1 sc1 sc4 sc5'
     'sc1 sc1 sc6 sc7'
     'sc1 sc1 sc8 sc9'
-    'div5 div6 div7 div8';
+    'div5 div5 div5 div5';
     gap: 5px;
+    height: 140vh;
 
 }
-
+/*
 #header {
     grid-area: hd1;
     text-align: center;
@@ -135,7 +152,7 @@ div {
     justify-content: space-evenly;
     padding: 18px 0px;
 }
-
+*/
 
 .map-section1 {
     text-align: center;
@@ -213,4 +230,26 @@ div {
 #section39 {
     grid-area: sc9;
     color: black;
+}
+
+
+.div5 {
+    grid-area: div5;
+    width: 100%;            
+    max-width: 600px;     
+    height: 400px;      
+    position: relative;      
+    overflow: hidden;    
+    margin: 0 auto;        
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.div5 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;  
 }
