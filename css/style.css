@@ -1,7 +1,7 @@
 #wrapper1 {
     display:grid; 
     grid-template-columns: 33% 33% 1fr;
-    grid-template-rows: 10vh 10vh 20vh 30vh 40vh;
+    grid-template-rows: 10vh 10vh 10vh 30vh 30vh;
     grid-template-areas: 
     'hd1 hd1 hd1'
     'nav1 nav1 nav1'
@@ -16,15 +16,16 @@
 header {
     grid-area: hd1;
     text-align: center;
-    color: black;
-
+    color: #3498db ;
 }
 
 header h1 {
     margin:0px;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 nav {
     display: flex;
@@ -34,33 +35,24 @@ nav {
     justify-content: space-evenly;
     padding: 18px 0px;
     margin: 0px;
-   
 }
 
 #navtest{
-   
     margin-top: 10px;
     justify-content: space-evenly;
     text-align: center;
-   
-   
-   
 }
 
 #navtest3{
     margin-top: 15px;
     justify-content: space-evenly;
-    text-align: center;
-   
+    text-align: center; 
 }
-
-
 
 #div {
     grid-area: div1;
     text-align: center;
     color: green;
-
 }
 
 #section1 {
@@ -102,23 +94,58 @@ nav {
     height: 175.5px;
 }
 
-
 #wrapper2 {
     display: grid;
     grid-template-columns: 33% 33% 1fr;
-    grid-template-rows: 10vh 20vh 15vh 50vh 25vh;
+    grid-template-rows: 10vh 20vh 15vh 35vh 25vh;
     grid-template-areas: 
     'hd1 hd1 hd1'
     'nav1 nav1 nav1'
     'div1 div1 div1'
     'sc1 sc2 sc3'
-    'ft1 ft2 ft3';
-   
+    'ft1 ft1 ft1';
+    gap: 15px;
 }
 
+div {
+    grid-area: div1;
+    color: black;
+    text-align: center;
+}
 
+#section21 {
+    grid-area: sc1;
+    color: black;
+    background-image: url(/img/väder.jpg);
+    background-size: contain;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+}
 
+#section22 {
+    grid-area: sc2;
+    color: black;
+    background-image: url(/img/valutaomvandlare.png);
+    background-size: cover;
+    border-radius: 10%;
+}
 
+#section23 {
+    grid-area: sc3;
+    color: black;
+    background-image: url(/img/tidszoner.jpg);
+    background-size: cover;
+    border-radius: 10%;
+}
+  
+#footer {
+    display: flex ;
+    grid-area: ft1 ;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    gap: 28vw ;   
+}
 
 #wrapper3 {
     display: grid;
@@ -133,26 +160,10 @@ nav {
     'sc1 sc1 sc6 sc7'
     'sc1 sc1 sc8 sc9'
     'div5 div5 div5 div5';
-    gap: 5px;
+    gap: 15px;
     height: 140vh;
 
 }
-/*
-#header {
-    grid-area: hd1;
-    text-align: center;
-    color: black;
-}
-
-#nav {
-    display: flex;
-    grid-area: nav1;
-    text-align: center;
-    color: green;
-    justify-content: space-evenly;
-    padding: 18px 0px;
-}
-*/
 
 .map-section1 {
     text-align: center;
@@ -186,7 +197,7 @@ nav {
 
 #section32 {
     grid-area: sc2;
-    background-image: url(/img/koravrev.jpg);
+    background-image: url(/img/bild-haj.png);
     background-size: cover;
     border-radius: 15px;
 }
@@ -231,8 +242,6 @@ nav {
     grid-area: sc9;
     color: black;
 }
-
-
 .div5 {
     grid-area: div5;
     width: 100%;            
